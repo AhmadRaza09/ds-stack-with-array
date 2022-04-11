@@ -29,6 +29,12 @@ public class Stack
 	}
 	
 	//methods
+	
+	public int getSize()
+	{
+		return size;
+	}
+	
 	public boolean isFull()
 	{
 		return size >= values.length;

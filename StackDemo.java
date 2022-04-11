@@ -9,13 +9,14 @@ public class StackDemo
 	public static void main(String [] args) throws StackFullException, StackEmptyException
 	{
 		Stack s1 = new Stack();
-		for(int i = 0; i < 10; i++)
+		for(int i = 0; i <10; i++)
 		{
 			s1.push(i);
 			System.out.println(s1.peek());
 		}
 		System.out.println("pop");
-		for(int i = 0; i < 10; i++)
+		int size = s1.getSize()
+		for(int i = 0; i < size; i++)
 		{
 			
 			System.out.println(s1.pop());
