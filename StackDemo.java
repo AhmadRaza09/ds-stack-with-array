@@ -15,7 +15,7 @@ public class StackDemo
 			System.out.println(s1.peek());
 		}
 		System.out.println("pop");
-		int size = s1.getSize()
+		int size = s1.getSize();
 		for(int i = 0; i < size; i++)
 		{
 			
