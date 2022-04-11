@@ -15,6 +15,8 @@ public class Stack
 	//store the size of the data added
 	private int size = 0;
 	
+	
+	//constructor
 	public Stack()
 	{
 		values = new int[100];
@@ -24,4 +26,12 @@ public class Stack
 	{
 		values = new int [limit];
 	}
+	
+	//methods
+	public boolean isFull()
+	{
+		return size > values.length;
+	}
+	
+	
 }
