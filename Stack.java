@@ -59,5 +59,18 @@ public class Stack
 		}
 	}
 	
+	public int peek() throws StackEmptyException
+	{
+		if(top != -1)
+		{
+			
+			return values[top];
+		}
+		else
+		{
+			throw new StackEmptyException();
+		}
+	}
+	
 	
 }
