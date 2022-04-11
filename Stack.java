@@ -24,7 +24,7 @@ public class Stack
 	
 	public Stack(int limit)
 	{
-		values = new int [limit];
+		values = new int[limit];
 	}
 	
 	//methods
@@ -38,10 +38,24 @@ public class Stack
 		if(!isFull())
 		{
 			values[++top] = value;
+			size++;
 		}
 		else
 		{
 			throw new StackFullException();
+		}
+	}
+	
+	public int pop() throws StackEmptyException
+	{
+		if(top != -1)
+		{
+			size--;
+			return values[top--];
+		}
+		else
+		{
+			throw new StackEmptyException();
 		}
 	}
 	
