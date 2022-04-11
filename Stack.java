@@ -10,7 +10,8 @@ public class Stack
 	private int [] values;
 	
 	//always point to the last push element
-	private int top = -1;
+	
+	private	int top = -1;
 	
 	//store the size of the data added
 	private int size = 0;
@@ -19,7 +20,7 @@ public class Stack
 	//constructor
 	public Stack()
 	{
-		values = new int[100];
+		values = new int[10];
 	}
 	
 	public Stack(int limit)
@@ -30,7 +31,7 @@ public class Stack
 	//methods
 	public boolean isFull()
 	{
-		return size > values.length;
+		return size >= values.length;
 	}
 	
 	public void push(int value) throws StackFullException
@@ -70,6 +71,12 @@ public class Stack
 		{
 			throw new StackEmptyException();
 		}
+	}
+	
+	public void deleteStack()
+	{
+		size = 0;
+		top = -1;
 	}
 	
 	
