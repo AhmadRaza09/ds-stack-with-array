@@ -33,5 +33,17 @@ public class Stack
 		return size > values.length;
 	}
 	
+	public void push(int value) throws StackFullException
+	{
+		if(!isFull())
+		{
+			values[++top] = value;
+		}
+		else
+		{
+			throw new StackFullException();
+		}
+	}
+	
 	
 }

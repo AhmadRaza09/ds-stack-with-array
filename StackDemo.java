@@ -6,10 +6,11 @@
 public class StackDemo
 {
 	
-	public static void main(String [] args)
+	public static void main(String [] args) throws StackFullException
 	{
 		Stack s1 = new Stack();
 		System.out.println(s1.isFull());
+		s1.push(10);
 	}
 	
 }
